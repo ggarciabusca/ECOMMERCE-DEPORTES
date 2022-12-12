@@ -21,7 +21,7 @@
                 </div>
                 <form method="post">
                     {% csrf_token %}
-                    {{ formulario.as_table }}
+                    {{ formulario.as_p }}
                 
                     <input type="submit" value="Dejar mensaje">
                     

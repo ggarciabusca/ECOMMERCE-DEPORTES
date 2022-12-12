@@ -1,0 +1,14 @@
+{% extends "productos/base.html" %}
+
+{% block contenido %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ formulario.as_p }}
+
+    <input type="submit" value="Dejar mensaje">
+    
+</form>
+
+
+{% endblock %}
