@@ -25,3 +25,7 @@ class UserEditForm(UserChangeForm):
         model = User
         fields = ["first_name","last_name","email"]
         help_texts = { "email": "Indica un correo electronico que uses habitualmente", "first_name": "", "last_name": ""}
+
+#class MensajeFormulario(forms.Form):
+ #   mensaje = forms.CharField()
+    #fecha = forms.DateTimeField()

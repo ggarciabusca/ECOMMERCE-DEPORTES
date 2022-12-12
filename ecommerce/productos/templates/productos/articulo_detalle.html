@@ -19,14 +19,23 @@
                     <a class="btn btn-outline-dark mt-auto" href="{% url 'articulos-listar' 0 %}">Volver</a>
 
                 </div>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ formulario.as_table }}
                 
+                    <input type="submit" value="Dejar mensaje">
+                    
+                </form>
                    <h1>Mensajes</h1> 
                     {% for mensaje in mensajes %}
                     
-                    <p class="lead"> De {{mensaje.user_id}}{{mensaje.fecha}}{{mensaje.user}}: {{mensaje.mensaje}}</p>
+                    <p class="lead"> De User ID:{{mensaje.user_id}} <br> Fecha del mensaje: {{mensaje.fecha}} <br> Usuario:  {{mensaje.user}} 
+                     <br> Mensaje: {{mensaje.mensaje}}</p>
                     {% endfor %}
                 </div>
                 
+
+
             </div>
         </div>
     </section>

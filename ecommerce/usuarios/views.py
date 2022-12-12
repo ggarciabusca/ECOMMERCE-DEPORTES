@@ -5,6 +5,7 @@ from usuarios.forms import UserRegisterForm, UserEditForm
 from usuarios.models import *
 from django.contrib.auth.decorators import login_required
 
+
 # importo el paquete os para manejar nombres de archivo
 import os
 
@@ -86,3 +87,4 @@ def avatar_usuario(usuario_activo):
     else:
         imagen_url = ""
     return (imagen_url)
+
