@@ -12,3 +12,7 @@ class Mensajes(models.Model):
     articulo = models.ForeignKey(Articulo, on_delete=models.CASCADE)
     mensaje = models.CharField(max_length=300)
     fecha = models.DateTimeField(auto_now=True)
+
+    #Para mostrar los campos con el nombre en la pantalla de admin
+    def __str__(self):
+        return f"User FK : {self.user} - Arituclo FK: {self.articulo} - Mensaje: {self.mensaje} - Fecha: {self.fecha}"

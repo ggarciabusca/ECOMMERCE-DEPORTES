@@ -4,6 +4,7 @@ from usuarios.models import *
 from django.contrib.auth.decorators import login_required
 from usuarios.views import avatar_usuario
 from productos.forms import MensajeFormulario
+from django.views.generic.edit import CreateView
 
 
 def inicio(request):
@@ -89,18 +90,23 @@ def articulos_detalle(request,id_detalle):
     user = request.user
     return render(request, "productos/articulo_detalle.html",{"articulo":articulo_detalle,"mensajes":mensajes_articulo,"user":user})
 
-@login_required    
-def mensaje_nuevo(request):
-    if request.method == "POST":
-        formulario = MensajeFormulario(request.POST)
+# @login_required    
+# def mensaje_nuevo(request):
+#     if request.method == "POST":
+#         formulario = MensajeFormulario(request.POST)
         
-        if formulario.is_valid():
-            # Accedemos al diccionario que contiene
-            # la informacion del formulario
-            data = formulario.cleaned_data
+#         if formulario.is_valid():
+#             # Accedemos al diccionario que contiene
+#             # la informacion del formulario
+#             data = formulario.cleaned_data
 
-            mensaje = Mensajes(mensaje=data["mensaje"])
-            mensaje.save()
+#             mensaje = Mensajes(mensaje=data["mensaje"])
+#             mensaje.save()
 
-    formulario = MensajeFormulario()
-    return render(request, "productos/articulo_detalle.html", {"formulario": formulario})
+#     formulario = MensajeFormulario()
+#     return render(request, "productos/articulo_detalle.html", {"formulario": formulario})
+
+class MensajeNuevo(CreateView):
+    model = Mensajes
+    success_url = "articulo_detalle/<id_detalle>/"
+    fields = ["mensaje"]

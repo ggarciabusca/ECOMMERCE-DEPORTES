@@ -12,5 +12,5 @@ urlpatterns = [
     path("articulos_editar/<id_a_editar>/",articulos_editar,name="articulos-editar"),
     path("articulos_detalle/<id_detalle>/",articulos_detalle,name="articulos-detalle"),
     # path("MensajeFormulario",views.MensajeFormulario,name="articulos-detalle"), #para ver si  muestra el formulario
-    path("mensaje_nuevo/<articulo_id>/",mensaje_nuevo,name="articulos-detalle"),
+    path("articulos_detalle/<id_detalle>/",views.MensajeNuevo.as_view(),name="articulos-detalle"),
 ]
