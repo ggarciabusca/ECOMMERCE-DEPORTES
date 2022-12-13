@@ -1,6 +1,5 @@
 from django.urls import path
 from productos.views import *
-from productos import views
 
 urlpatterns = [
     path("inicio/", inicio, name="productos-inicio"),
@@ -10,7 +9,6 @@ urlpatterns = [
     path("articulos_listar/<deporte_id>/",articulos_listar,name="articulos-listar"),
     path("articulos_eliminar/<id_a_eliminar>/",articulos_eliminar,name="articulos-eliminar"),
     path("articulos_editar/<id_a_editar>/",articulos_editar,name="articulos-editar"),
-    path("articulos_detalle/<id_detalle>/",articulos_detalle,name="articulos-detalle"),
-    # path("MensajeFormulario",views.MensajeFormulario,name="articulos-detalle"), #para ver si  muestra el formulario
-    path("articulos_detalle/<id_detalle>/",views.MensajeNuevo.as_view(),name="articulos-detalle"),
+    path("articulos_detalle/<id_detalle>/",articulos_detalle,name="articulos-detalle")
+
 ]
