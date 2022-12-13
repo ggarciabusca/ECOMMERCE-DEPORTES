@@ -90,21 +90,43 @@ def articulos_detalle(request,id_detalle):
     user = request.user
     return render(request, "productos/articulo_detalle.html",{"articulo":articulo_detalle,"mensajes":mensajes_articulo,"user":user})
 
-@login_required    
+
 def mensaje_nuevo(request):
+    #acá me traigo los datos desde el formulario y los guardo en variables para luego crear la instancia
     if request.method == "POST":
-        formulario = MensajeFormulario(request.POST)
+        nuevo_mensaje = request.POST["mensaje"]
+
+        mensaje_instancia = Mensajes.objects.filter(nombre=nuevo_mensaje)[0]
+        mensaje_nuevo = Mensajes(mensaje=mensaje_instancia)
+        mensaje_nuevo.save()
+        return redirect("articulos-detalle")
+    
+    mensajes = Mensajes.objects.all()
+    return render(request, "productos/articulo_detalle.html",{"mensajes":mensajes})
+
+
+
+
+
+
+
+
+
+# @login_required    
+# def mensaje_nuevo(request):
+#     if request.method == "POST":
+#         formulario = MensajeFormulario(request.POST)
         
-        if formulario.is_valid():
-            # Accedemos al diccionario que contiene
-            # la informacion del formulario
-            data = formulario.cleaned_data
+#         if formulario.is_valid():
+#             # Accedemos al diccionario que contiene
+#             # la informacion del formulario
+#             data = formulario.cleaned_data
 
-            mensaje = Mensajes.objects.get(data)
-            mensaje.save()
+#             mensaje = Mensajes.objects.get(data)
+#             mensaje.save()
 
-    formulario = MensajeFormulario()
-    return render(request, "productos/articulo_detalle.html", {"formulario": formulario})
+#     formulario = MensajeFormulario()
+#     return render(request, "productos/articulo_detalle.html", {"formulario": formulario})
 
 # class MensajeNuevo(CreateView):
 #     model = Mensajes

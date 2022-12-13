@@ -19,12 +19,26 @@
                     <a class="btn btn-outline-dark mt-auto" href="{% url 'articulos-listar' 0 %}">Volver</a>
 
                 </div>
-                <form method="post">
+                <!--<form method="post">
                     {% csrf_token %}
                     {{ formulario.as_p }}
                 
-                    <input type="submit" value="Dejar mensaje">
+                    <input type="submit" value="Dejar mensaje">-->
                     
+                <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="container px-2 px-lg-2 mt-1">
+                            <div class="row gx-3 gx-lg-3 row-cols-1 row-cols-md-1 row-cols-xl-2 justify-content-center">
+                                <h1 class="mt-4">Mensajes</h1>
+                                <div class="container px-4 px-lg-5 mt-5">
+                                    <p> Mensaje: <input type="text" name="mensaje"> </p>
+                                    <input type="submit" value="dejar mensaje">
+                                </div> 
+                            </div>
+                        </div>          
+                
+                </form>
+               
                 </form>
                    <h1>Mensajes</h1> 
                     {% for mensaje in mensajes %}
