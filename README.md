@@ -1,11 +1,10 @@
 # Proyecto Final del Curso Python 44470
 
-## Integrantes:  
+## Integrantes: 
 
-
-    + **Maria** **Carbajal** 
-    + **Gonzalo** **Salines** 
-    + **Gonzalo** **Garcia** 
++ **Maria** **Carbajal** 
++ **Gonzalo** **Salines** 
++ **Gonzalo** **Garcia** 
 
 Superusuario: administrador
 Pass: admin1234
