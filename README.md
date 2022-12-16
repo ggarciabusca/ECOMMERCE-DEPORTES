@@ -2,11 +2,11 @@
 
 ## Integrantes:
 
-    <lo> **Maria Carbajal** </lo>
-    <lo> **Gonzalo Salines** </lo>
-    <lo> **Gonzalo Garcia** </lo>
+    + **Maria** **Carbajal** 
+    + **Gonzalo** **Salines** 
+    + **Gonzalo** **Garcia** 
 
 Superusuario: administrador
 Pass: admin1234
 
-página de inicio http://127.0.0.1:8000/productos/inicio/
+Ingresar: [Página de inicio](http://127.0.0.1:8000/productos/inicio/)
