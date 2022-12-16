@@ -11,9 +11,10 @@
 ## Descripción del Proyecto: ECOMMERCE-DEPORTES    
 
 El proyecto que definimos se basa en una página e-commerce sobre artículos deportivos. 
-<p> **Gonzalo** **Garcia** se encargo de crear el proyecto en Django y subirlo a GitHub. Asi como también la creación de las App del proyecto: *producto* y *usuario*.
+
+**Gonzalo** **Garcia** se encargo de crear el proyecto en Django y subirlo a GitHub. Asi como también la creación de las App del proyecto: *producto* y *usuario*.
   Junto con **Gonzalo** **Salines** se encargaron de armar la aplicación de Mensajes que vincula no solo usuario, sino también artículos.
-</p>
+
 
 
 ### Credenciales de SuperUser
