@@ -8,7 +8,7 @@
 + **Gonzalo** **Salines** 
 + **Gonzalo** **Garcia** 
 
-## Descripción del Proyecto  
+## Descripción del Proyecto: ECOMMERCE-DEPORTES    
 
 El proyecto que definimos se basa en una página e-commerce sobre artículos deportivos. 
 
