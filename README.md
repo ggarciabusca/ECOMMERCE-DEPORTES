@@ -2,9 +2,9 @@
 
 ## Integrantes:
 
-    <lu> **Maria Carbajal** </lu>
-    <lu> **Gonzalo Salines** </lu>
-    <lu> **Gonzalo Garcia** </lu>
+    <lo> **Maria Carbajal** </lo>
+    <lo> **Gonzalo Salines** </lo>
+    <lo> **Gonzalo Garcia** </lo>
 
 Superusuario: administrador
 Pass: admin1234
