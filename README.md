@@ -12,9 +12,15 @@
 
 El proyecto que definimos se basa en una página e-commerce sobre artículos deportivos. 
 
-**Gonzalo** **Garcia** se encargo de crear el proyecto en Django y subirlo a GitHub. Asi como también la creación de las App del proyecto: *producto* y *usuario*.
-  Junto con **Gonzalo** **Salines** se encargaron de armar la aplicación de Mensajes que vincula no solo usuario, sino también artículos.
+**Gonzalo** **Garcia** se encargó de crear el proyecto en Django y subirlo a GitHub. Asi como también la parte fundamental de creación de las App del proyecto: *producto* y *usuario* con sus respectivas vistas y paginas HTML.
+  Junto con **Gonzalo** **Salines** se encargaron de armar la aplicación de Mensajes que relaciona no solo usuarios, sino también artículos.  
+  
+**Gonzalo** **Salines** se encargó de organizar las reuniones y el seguimiento del proyecto, utilizando herramientas de gerenciamiento de proyecto como OneNote, Google Meet, etc.
+Confecciono el *Readme.md* y dio soporte de GitHub a **Gonzalo** **Garcia**. En conjunto con **Maria** realizo los Unit Tests.  
 
+**Maria** **Carbajal**  se encargó de la sección *Acerca de Nosotros*. También de la elección y la carga del Template base al proyecto. Brindo soporte en el seguimiento de las tareas. Y estuvo a cargo del video de demostración.
+
+En todo momento el grupo estuvo en coordinación y en pleno conocimiento de lo que cada uno realizaba, todas las decisiones fueron consensuadas y en cada una de las tareas todos los integrantes tuvieron algún tipo de participación.  
 
 
 ### Credenciales de SuperUser
@@ -24,4 +30,9 @@ El proyecto que definimos se basa en una página e-commerce sobre artículos dep
 
 ### Ingreso  
 
-[Página de inicio](http://127.0.0.1:8000/productos/inicio/)
+[Página de inicio](http://127.0.0.1:8000/productos/inicio/)  
+
+### Video de Demostración
+
+
+
