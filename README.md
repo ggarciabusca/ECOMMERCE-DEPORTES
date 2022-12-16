@@ -18,6 +18,6 @@ El proyecto que definimos se basa en una página e-commerce sobre artículos dep
 
 + **Pass:** *admin1234*
 
-### Ingresar:  
+### Ingreso  
 
 [Página de inicio](http://127.0.0.1:8000/productos/inicio/)
