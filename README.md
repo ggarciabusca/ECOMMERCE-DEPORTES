@@ -1,9 +1,9 @@
-#Proyecto Final del Curso Python 44470
+#Proyecto Final del Curso Python 44470#
 
-##Integrantes:
-    - **Maria Carbajal
-    - **Gonzalo Salines
-    - **Gonzalo Garcia
+##Integrantes:##
+    - **Maria Carbajal**
+    - **Gonzalo Salines**
+    - **Gonzalo Garcia**
 
 Superusuario: administrador
 Pass: admin1234
