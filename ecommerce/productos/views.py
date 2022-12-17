@@ -34,7 +34,7 @@ def deportes_nuevo(request):
         deportes_nuevo.save() #con esto lo guardo en la base de datos
         return redirect("productos-inicio")
         
-    return render(request, "productos/deportes_nuevo.html")
+    return render(request, "productos/deportes_nuevo.html",{"avatar":avatar_usuario(request.user)})
 
 def articulo_nuevo(request):
     #acá me traigo los datos desde el formulario y los guardo en variables para luego crear la instancia
@@ -57,7 +57,7 @@ def articulo_nuevo(request):
 
     marcas = Marca.objects.all()
     deportes = Deporte.objects.all()
-    return render(request, "productos/articulo_nuevo.html",{"marcas":marcas,"deportes":deportes})
+    return render(request, "productos/articulo_nuevo.html",{"avatar":avatar_usuario(request.user),"marcas":marcas,"deportes":deportes})
 
 def articulos_eliminar(request, id_a_eliminar):
     articulo_borrar = Articulo.objects.get(id=id_a_eliminar)
@@ -77,7 +77,7 @@ def articulos_editar(request, id_a_editar):
         articulo_editar.save() #con esto guardo los cambios en la base de datos
         return redirect("productos-inicio")
     else:
-        datos_inicio = {"inicial":articulo_editar}
+        datos_inicio = {"avatar":avatar_usuario(request.user),"inicial":articulo_editar}
         return render (request,"productos/articulo_editar.html",datos_inicio)
 
 def articulos_detalle(request,id_detalle):
@@ -90,7 +90,7 @@ def articulos_detalle(request,id_detalle):
     
     mensajes_articulo = Mensajes.objects.filter(articulo_id=id_detalle)
     
-    return render(request, "productos/articulo_detalle.html",{"articulo":articulo_detalle,"mensajes":mensajes_articulo})
+    return render(request, "productos/articulo_detalle.html",{"avatar":avatar_usuario(request.user),"articulo":articulo_detalle,"mensajes":mensajes_articulo})
 
 def miembros(request):
-    return render(request,"productos/sobre_nosotros.html")
+    return render(request,"productos/sobre_nosotros.html",{"avatar":avatar_usuario(request.user)})
