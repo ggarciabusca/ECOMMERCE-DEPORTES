@@ -33,3 +33,4 @@ En todo momento el grupo estuvo en coordinación y en pleno conocimiento de lo q
 [Página de inicio](http://127.0.0.1:8000/productos/inicio/)  
 
 ### Video de Demostración
+[Video](https://www.loom.com/share/00381dc098024114a88e609cdecd7229)
